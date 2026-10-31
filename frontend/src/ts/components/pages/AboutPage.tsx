@@ -38,7 +38,7 @@ export function AboutPage(): JSXElement {
   return (
     <div class="content-grid grid gap-8">
       <section class="text-center text-sub">
-        TypeHorizon is an independent project maintained by hadi-hani and
+        TypeHorizon is an independent project maintained by its contributors and
         contributors. It is a modified distribution based on the Monkeytype
         GPL-3.0 codebase.
         <br />
