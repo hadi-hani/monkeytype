@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: 
+Disallow:
 
-Sitemap: https://monkeytype.com/sitemap.xml
+# Add the canonical TypeHorizon sitemap URL after the production domain is configured.
