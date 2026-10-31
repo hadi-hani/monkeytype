@@ -43,13 +43,13 @@ export function Footer(): JSXElement {
             variant="text"
             text="source"
             fa={{ icon: "fa-code", fixedWidth: true }}
-            href="https://github.com/hadi-hani/monkeytype"
+            href="https://github.com/hadi-hani/typehorizon"
           />
           <Button
             variant="text"
             text="report issue"
             fa={{ icon: "fa-bug", fixedWidth: true }}
-            href="https://github.com/hadi-hani/monkeytype/issues"
+            href="https://github.com/hadi-hani/typehorizon/issues"
           />
           <Button
             variant="text"
