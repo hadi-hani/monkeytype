@@ -21,14 +21,14 @@ export function SupportModal(): JSXElement {
       <div class="mt-4 grid grid-cols-1 gap-4 xs:grid-cols-2">
         <Button
           variant="button"
-          href="https://github.com/hadi-hani/monkeytype/issues"
+          href="https://github.com/hadi-hani/typehorizon/issues"
           fa={{ icon: "fa-bug", fixedWidth: true, size: 2 }}
           text="Report an issue"
           class={buttonClass}
         />
         <Button
           variant="button"
-          href="https://github.com/hadi-hani/monkeytype"
+          href="https://github.com/hadi-hani/typehorizon"
           fa={{ icon: "fa-code", fixedWidth: true, size: 2 }}
           text="Contribute on GitHub"
           class={buttonClass}
