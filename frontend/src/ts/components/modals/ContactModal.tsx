@@ -16,14 +16,14 @@ export function ContactModal(): JSXElement {
       <div class="mt-4 grid gap-4 md:grid-cols-2">
         <Button
           variant="button"
-          href="https://github.com/hadi-hani/monkeytype/issues/new"
+          href="https://github.com/hadi-hani/typehorizon/issues/new"
           text="Report a bug or request a feature"
           class={buttonClass}
           fa={{ icon: "fa-bug", fixedWidth: true }}
         />
         <Button
           variant="button"
-          href="https://github.com/hadi-hani/monkeytype"
+          href="https://github.com/hadi-hani/typehorizon"
           text="View the source code"
           class={buttonClass}
           fa={{ icon: "fa-code", fixedWidth: true }}
