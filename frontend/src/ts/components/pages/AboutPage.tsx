@@ -38,13 +38,13 @@ export function AboutPage(): JSXElement {
   return (
     <div class="content-grid grid gap-8">
       <section class="text-center text-sub">
-        TypeHorizon is an independent project maintained by its contributors and
-        contributors. It is a modified distribution based on the Monkeytype
+        TypeHorizon is an independent project maintained by its contributors. It
+        is a modified distribution based on the Monkeytype
         GPL-3.0 codebase.
         <br />
         <a href="https://github.com/monkeytypegame/monkeytype">Original upstream project</a>
         {" "}and{" "}
-        <a href="https://github.com/hadi-hani/monkeytype">TypeHorizon source code</a>.
+        <a href="https://github.com/hadi-hani/typehorizon">TypeHorizon source code</a>.
       </section>
       <section>
         <AsyncContent
@@ -246,9 +246,8 @@ export function AboutPage(): JSXElement {
       <section>
         <H3 fa={{ icon: "fa-bug" }} text="bug report or feature request" />
         <p>
-          If you encounter a bug, or have a feature request - join the Discord
-          server, send me an email, a direct message on Twitter or create an
-          issue on GitHub.
+          For TypeHorizon bug reports and feature requests, use the issue
+          tracker linked below.
         </p>
       </section>
       <div></div>
@@ -285,14 +284,14 @@ export function AboutPage(): JSXElement {
           />
           <Button
             text="issues"
-            fa={{ icon: "fa-twitter", variant: "brand" }}
-            href="https://github.com/hadi-hani/monkeytype/issues"
+            fa={{ icon: "fa-bug" }}
+            href="https://github.com/hadi-hani/typehorizon/issues"
             class="w-full p-8"
           />
           <Button
             text="source"
-            fa={{ icon: "fa-discord", variant: "brand" }}
-            href="https://github.com/hadi-hani/monkeytype"
+            fa={{ icon: "fa-code" }}
+            href="https://github.com/hadi-hani/typehorizon"
             class="w-full p-8"
           />
           <Button
@@ -418,7 +417,7 @@ export function AboutPage(): JSXElement {
           <Button
             text="TypeHorizon source"
             fa={{ icon: "fa-code" }}
-            href="https://github.com/hadi-hani/monkeytype"
+            href="https://github.com/hadi-hani/typehorizon"
             class="w-full p-6"
           />
           <Button
