@@ -319,14 +319,6 @@ export const commands: CommandsSubgroup = {
       },
     },
     {
-      id: "joinDiscord",
-      display: "Join the Discord server",
-      fa: { icon: "fa-users" },
-      exec: (): void => {
-        window.open("https://discord.gg/monkeytype");
-      },
-    },
-    {
       id: "signOut",
       display: "Sign out",
       fa: { icon: "fa-sign-out-alt" },

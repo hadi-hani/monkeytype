@@ -1,5 +1,4 @@
 import * as MonkeyPower from "./elements/monkey-power";
-import * as MerchBanner from "./elements/merch-banner";
 import * as ServerConfiguration from "./ape/server-configuration";
 import { configLoadPromise } from "./config/lifecycle";
 import { authPromise } from "./firebase";
@@ -10,8 +9,6 @@ import { setAppReady } from "./states/core";
 onDOMReady(async () => {
   await configLoadPromise;
   await authPromise;
-
-  MerchBanner.showIfNotClosedBefore();
 
   setAppReady(true);
 

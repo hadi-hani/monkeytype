@@ -38,12 +38,17 @@ export function AboutPage(): JSXElement {
   return (
     <div class="content-grid grid gap-8">
       <section class="text-center text-sub">
-        Created with love by Miodec.
+        TypeHorizon is an independent project maintained by its contributors. It
+        is a modified distribution based on the Monkeytype GPL-3.0 codebase.
         <br />
-        <a href="#supporters_title">Supported</a> and{" "}
-        <a href="#contributors_title">expanded</a> by many awesome people.
-        <br />
-        Launched on 15th of May, 2020.
+        <a href="https://github.com/monkeytypegame/monkeytype">
+          Original upstream project
+        </a>{" "}
+        and{" "}
+        <a href="https://github.com/hadi-hani/typehorizon">
+          TypeHorizon source code
+        </a>
+        .
       </section>
       <section>
         <AsyncContent
@@ -170,17 +175,14 @@ export function AboutPage(): JSXElement {
       <section>
         <H2 fa={{ icon: "fa-info-circle" }} text="about" />
         <p>
-          Monkeytype is a minimalistic and customizable typing test. It features
-          many test modes, an account system to save your typing speed history,
-          and user-configurable features such as themes, sounds, a smooth caret,
-          and more. Monkeytype attempts to emulate the experience of natural
-          keyboard typing during a typing test, by unobtrusively presenting the
-          text prompts and displaying typed characters in-place, providing
-          straightforward, real-time feedback on typos, speed, and accuracy.
+          TypeHorizon is a customizable typing-practice platform based on the
+          Monkeytype codebase. This independent distribution retains many of the
+          upstream typing modes, settings, themes, and real-time feedback, while
+          using the TypeHorizon product identity and its own deployment
+          configuration.
           <br />
           <br />
-          Test yourself in various modes, track your progress and improve your
-          speed.
+          Practice typing, review your results, and track your progress.
         </p>
       </section>
       <section>
@@ -248,9 +250,8 @@ export function AboutPage(): JSXElement {
       <section>
         <H3 fa={{ icon: "fa-bug" }} text="bug report or feature request" />
         <p>
-          If you encounter a bug, or have a feature request - join the Discord
-          server, send me an email, a direct message on Twitter or create an
-          issue on GitHub.
+          For TypeHorizon bug reports and feature requests, use the issue
+          tracker linked below.
         </p>
       </section>
       <div></div>
@@ -275,8 +276,8 @@ export function AboutPage(): JSXElement {
       <section>
         <H2 fa={{ icon: "fa-envelope" }} text="contact" />
         <p>
-          If you encounter a bug, have a feature request or just want to say hi
-          - here are the different ways you can contact me directly.
+          For TypeHorizon bug reports and feature requests, use the issue
+          tracker in the TypeHorizon source repository.
         </p>
         <div class="mt-4 grid w-full grid-cols-1 gap-4 text-xl sm:grid-cols-2 lg:grid-cols-4">
           <Button
@@ -286,19 +287,19 @@ export function AboutPage(): JSXElement {
             class="w-full p-8"
           />
           <Button
-            text="twitter"
-            fa={{ icon: "fa-twitter", variant: "brand" }}
-            href="https://x.com/monkeytype"
+            text="issues"
+            fa={{ icon: "fa-bug" }}
+            href="https://github.com/hadi-hani/typehorizon/issues"
             class="w-full p-8"
           />
           <Button
-            text="discord"
-            fa={{ icon: "fa-discord", variant: "brand" }}
-            href="https://discord.gg/monkeytype"
+            text="source"
+            fa={{ icon: "fa-code" }}
+            href="https://github.com/hadi-hani/typehorizon"
             class="w-full p-8"
           />
           <Button
-            text="github"
+            text="upstream"
             fa={{ icon: "fa-github", variant: "brand" }}
             href="https://github.com/monkeytypegame/monkeytype"
             class="w-full p-8"
@@ -307,7 +308,7 @@ export function AboutPage(): JSXElement {
       </section>
       <div></div>
       <section>
-        <H2 fa={{ icon: "fa-users" }} text="credits" />
+        <H2 fa={{ icon: "fa-users" }} text="upstream credits" />
         <p>
           <Button
             variant="text"
@@ -394,6 +395,45 @@ export function AboutPage(): JSXElement {
             </div>
           )}
         </AsyncContent>
+      </section>
+      <section id="license">
+        <H2 fa={{ icon: "fa-file-contract" }} text="license and source" />
+        <p>
+          TypeHorizon is a modified work based on the
+          <a href="https://github.com/monkeytypegame/monkeytype">
+            {" "}
+            original Monkeytype project
+          </a>
+          . The upstream authors&apos; copyright and license notices are
+          retained. TypeHorizon changes are dated 31 October 2026 and maintained
+          in this repository.
+        </p>
+        <p>
+          This work is distributed under GNU General Public License version 3.0
+          (GPL-3.0). You may run, study, modify, and redistribute it under that
+          license. The software is provided without warranty. The corresponding
+          source code and build scripts are available in the linked repository.
+        </p>
+        <div class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <Button
+            text="Read GPL-3.0 license"
+            fa={{ icon: "fa-file-contract" }}
+            href="/LICENSE"
+            class="w-full p-6"
+          />
+          <Button
+            text="TypeHorizon source"
+            fa={{ icon: "fa-code" }}
+            href="https://github.com/hadi-hani/typehorizon"
+            class="w-full p-6"
+          />
+          <Button
+            text="Original Monkeytype source"
+            fa={{ icon: "fa-code-branch" }}
+            href="https://github.com/monkeytypegame/monkeytype"
+            class="w-full p-6"
+          />
+        </div>
       </section>
     </div>
   );

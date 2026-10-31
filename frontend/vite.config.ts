@@ -128,20 +128,20 @@ function getPlugins({
       injectRegister: null,
       registerType: "autoUpdate",
       manifest: {
-        short_name: "Monkeytype",
-        name: "Monkeytype",
+        short_name: "TypeHorizon",
+        name: "TypeHorizon",
         start_url: "/",
         icons: [
           {
-            src: "/images/icons/maskable_icon_x512.png",
-            sizes: "512x512",
-            type: "image/png",
+            src: "/images/icons/maskable_icon_x512.svg",
+            sizes: "any",
+            type: "image/svg+xml",
             purpose: "maskable",
           },
           {
-            src: "/images/icons/general_icon_x512.png",
-            sizes: "512x512",
-            type: "image/png",
+            src: "/images/icons/general_icon_x512.svg",
+            sizes: "any",
+            type: "image/svg+xml",
             purpose: "any",
           },
         ],
@@ -159,8 +159,8 @@ function getPlugins({
         runtimeCaching: [
           {
             urlPattern: (options) => {
-              const isApi = options.url.hostname === "api.monkeytype.com";
-              return options.sameOrigin && !isApi;
+              // Cache static same-origin assets only, never API responses.
+              return options.sameOrigin && options.request.destination !== "";
             },
             handler: "NetworkFirst",
             options: {},
@@ -179,12 +179,12 @@ function getPlugins({
     useSentry
       ? sentryVitePlugin({
           authToken: env["SENTRY_AUTH_TOKEN"],
-          org: "monkeytype",
-          project: "frontend",
+          org: env["SENTRY_ORG"] ?? "",
+          project: env["SENTRY_PROJECT"] ?? "typehorizon-frontend",
           release: {
             name: clientVersion,
           },
-          applicationKey: "monkeytype-frontend",
+          applicationKey: "typehorizon-frontend",
         })
       : null,
     injectPreload(),
@@ -336,8 +336,12 @@ export default defineConfig(({ mode }): UserConfig => {
     if (env["RECAPTCHA_SITE_KEY"] === undefined) {
       throw new Error(`${mode}: RECAPTCHA_SITE_KEY is not defined`);
     }
-    if (useSentry && env["SENTRY_AUTH_TOKEN"] === undefined) {
-      throw new Error(`${mode}: SENTRY_AUTH_TOKEN is not defined`);
+    if (useSentry) {
+      for (const key of ["SENTRY_AUTH_TOKEN", "SENTRY_ORG", "SENTRY_PROJECT"]) {
+        if (env[key] === undefined || env[key] === "") {
+          throw new Error(`${mode}: ${key} is required when SENTRY is enabled`);
+        }
+      }
     }
   }
 

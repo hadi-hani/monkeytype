@@ -1,72 +1,36 @@
 import { JSXElement } from "solid-js";
 
-import { showCommandline } from "../../states/commandline";
 import { AnimatedModal } from "../common/AnimatedModal";
 import { Button } from "../common/Button";
 import { Fa } from "../common/Fa";
 
 export function SupportModal(): JSXElement {
-  const buttonClass =
-    "p-4 flex flex-col text-md h-full justify-center items-center";
-  const iconScale = 2;
+  const buttonClass = "p-4 flex flex-col text-md h-full justify-center items-center";
 
   return (
     <AnimatedModal
       id="Support"
-      title="Support Monkeytype"
+      title="Support TypeHorizon"
       modalClass="max-w-4xl"
     >
       <div>
-        Thank you so much for thinking about supporting this project. It would
-        not be possible without you and your continued support.{" "}
-        <Fa icon="fa-heart" />
+        TypeHorizon is an independent open-source project. The most useful
+        support is helping improve the code, reporting reproducible issues, and
+        contributing changes under GPL-3.0. <Fa icon="fa-heart" />
       </div>
-      <div class="grid grid-cols-1 gap-4 xs:grid-cols-2 md:grid-cols-4">
+      <div class="mt-4 grid grid-cols-1 gap-4 xs:grid-cols-2">
         <Button
           variant="button"
-          onClick={() => {
-            showCommandline({ subgroupOverride: "ads" });
-          }}
-          fa={{
-            icon: "fa-ad",
-            fixedWidth: true,
-            size: iconScale,
-          }}
-          text="Enable Ads"
+          href="https://github.com/hadi-hani/typehorizon/issues"
+          fa={{ icon: "fa-bug", fixedWidth: true, size: 2 }}
+          text="Report an issue"
           class={buttonClass}
         />
         <Button
           variant="button"
-          href="https://ko-fi.com/monkeytype"
-          fa={{
-            icon: "fa-donate",
-            fixedWidth: true,
-            size: iconScale,
-          }}
-          text="Donate"
-          class={buttonClass}
-        />
-        <Button
-          variant="button"
-          href="https://www.patreon.com/monkeytype"
-          fa={{
-            variant: "brand",
-            icon: "fa-patreon",
-            fixedWidth: true,
-            size: iconScale,
-          }}
-          text="Join Patreon"
-          class={buttonClass}
-        />
-        <Button
-          variant="button"
-          href="https://monkeytype.store"
-          fa={{
-            icon: "fa-tshirt",
-            fixedWidth: true,
-            size: iconScale,
-          }}
-          text="Buy Merch"
+          href="https://github.com/hadi-hani/typehorizon"
+          fa={{ icon: "fa-code", fixedWidth: true, size: 2 }}
+          text="Contribute on GitHub"
           class={buttonClass}
         />
       </div>

@@ -36,10 +36,9 @@ export function envConfig(options: {
 
         const prodConfig: EnvConfig = {
           isDevelopment: false,
-          backendUrl: fallback(
-            options.env["BACKEND_URL"],
-            "https://api.monkeytype.com",
-          ),
+          // Production must use a TypeHorizon-owned backend or a same-origin proxy.
+          // Never silently send TypeHorizon users to the original Monkeytype API.
+          backendUrl: fallback(options.env["BACKEND_URL"], ""),
           recaptchaSiteKey: options.env["RECAPTCHA_SITE_KEY"] ?? "",
           quickLoginEmail: undefined,
           quickLoginPassword: undefined,
