@@ -6,7 +6,7 @@ TypeHorizon is a modified work based on the open-source **Monkeytype** project.
 - **Upstream source baseline:** `5478cd701df9e6a7d4611004ec84bef8999b3aaa`
 - **Baseline commit date:** 28 October 2026
 - **TypeHorizon rebrand and initial adaptation date:** 31 October 2026
-- **Maintained fork:** https://github.com/hadi-hani/monkeytype
+- **Maintained fork:** https://github.com/hadi-hani/typehorizon
 - **License:** GNU General Public License version 3.0 (GPL-3.0)
 
 The upstream work remains attributable to its original authors and contributors. Existing copyright, licensing, warranty, and attribution notices in inherited files must be retained. TypeHorizon branding, configuration changes, and other modifications are changes to the upstream work; they do not replace or erase the upstream authorship of the original code.
