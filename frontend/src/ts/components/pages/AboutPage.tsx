@@ -39,12 +39,16 @@ export function AboutPage(): JSXElement {
     <div class="content-grid grid gap-8">
       <section class="text-center text-sub">
         TypeHorizon is an independent project maintained by its contributors. It
-        is a modified distribution based on the Monkeytype
-        GPL-3.0 codebase.
+        is a modified distribution based on the Monkeytype GPL-3.0 codebase.
         <br />
-        <a href="https://github.com/monkeytypegame/monkeytype">Original upstream project</a>
-        {" "}and{" "}
-        <a href="https://github.com/hadi-hani/typehorizon">TypeHorizon source code</a>.
+        <a href="https://github.com/monkeytypegame/monkeytype">
+          Original upstream project
+        </a>{" "}
+        and{" "}
+        <a href="https://github.com/hadi-hani/typehorizon">
+          TypeHorizon source code
+        </a>
+        .
       </section>
       <section>
         <AsyncContent
@@ -172,9 +176,9 @@ export function AboutPage(): JSXElement {
         <H2 fa={{ icon: "fa-info-circle" }} text="about" />
         <p>
           TypeHorizon is a customizable typing-practice platform based on the
-          Monkeytype codebase. This independent distribution retains many of
-          the upstream typing modes, settings, themes, and real-time feedback,
-          while using the TypeHorizon product identity and its own deployment
+          Monkeytype codebase. This independent distribution retains many of the
+          upstream typing modes, settings, themes, and real-time feedback, while
+          using the TypeHorizon product identity and its own deployment
           configuration.
           <br />
           <br />
@@ -396,10 +400,13 @@ export function AboutPage(): JSXElement {
         <H2 fa={{ icon: "fa-file-contract" }} text="license and source" />
         <p>
           TypeHorizon is a modified work based on the
-          <a href="https://github.com/monkeytypegame/monkeytype"> original Monkeytype project</a>.
-          The upstream authors' copyright and license notices are retained.
-          TypeHorizon changes are dated 31 October 2026 and maintained in this
-          repository.
+          <a href="https://github.com/monkeytypegame/monkeytype">
+            {" "}
+            original Monkeytype project
+          </a>
+          . The upstream authors&apos; copyright and license notices are
+          retained. TypeHorizon changes are dated 31 October 2026 and maintained
+          in this repository.
         </p>
         <p>
           This work is distributed under GNU General Public License version 3.0

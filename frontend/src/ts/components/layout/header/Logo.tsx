@@ -30,10 +30,37 @@ export function Logo(): JSXElement {
         })}
         aria-hidden="true"
       >
-        <rect x="4" y="4" width="56" height="56" rx="17" fill="currentColor" opacity="0.12" stroke="none" />
-        <path d="M12 47H52M18 37H46" stroke-width="4" stroke-linecap="round" />
-        <path d="M23 29A9 9 0 0 1 41 29" stroke-width="4" stroke-linecap="round" />
-        <path d="M32 11V18" stroke-width="4" stroke-linecap="round" />
+        <rect
+          x="4"
+          y="4"
+          width="56"
+          height="56"
+          rx="17"
+          fill="currentColor"
+          opacity="0.12"
+          stroke="none"
+        ></rect>
+        <path
+          d="M12 47H52M18 37H46"
+          // oxlint-disable-next-line react/no-unknown-property
+          stroke-width="4"
+          // oxlint-disable-next-line react/no-unknown-property
+          stroke-linecap="round"
+        ></path>
+        <path
+          d="M23 29A9 9 0 0 1 41 29"
+          // oxlint-disable-next-line react/no-unknown-property
+          stroke-width="4"
+          // oxlint-disable-next-line react/no-unknown-property
+          stroke-linecap="round"
+        ></path>
+        <path
+          d="M32 11V18"
+          // oxlint-disable-next-line react/no-unknown-property
+          stroke-width="4"
+          // oxlint-disable-next-line react/no-unknown-property
+          stroke-linecap="round"
+        ></path>
       </svg>
       <div class="hidden h-6 place-content-center text-[2rem] leading-0 sm:grid">
         <div
