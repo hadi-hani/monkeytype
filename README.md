@@ -55,7 +55,7 @@ The inherited privacy, terms-of-service, and security-policy HTML pages are upst
 
 ## Contributions and issue reports
 
-Use the [GitHub issue tracker](https://github.com/hadi-hani/monkeytype/issues) for TypeHorizon bugs and feature requests. Contributions should retain the GPL-3.0 notices and clearly identify material modifications.
+Use the [GitHub issue tracker](https://github.com/hadi-hani/typehorizon/issues) for TypeHorizon bugs and feature requests. Contributions should retain the GPL-3.0 notices and clearly identify material modifications.
 
 ## Upstream project
 
